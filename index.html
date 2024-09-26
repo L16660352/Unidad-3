@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cambiador de Color Aleatorio</title>
+</head>
+<body>
+  <button onclick="cambiarColor()">Cambiar Color</button>
+  <script>
+    function cambiarColor() {
+      const colores = ["red", "blue", "green", "yellow", "purple", "orange"]; // Agrega más colores si deseas
+      const body = document.body;
+
+      // Seleccionar un color aleatorio utilizando un ciclo for
+      let colorAleatorio;
+      for (let i = 0; i < 1; i++) {
+        const indiceAleatorio = Math.floor(Math.random() * colores.length);
+        colorAleatorio = colores[indiceAleatorio];
+      }
+
+      body.style.backgroundColor = colorAleatorio;
+    }
+  </script>
+</body>
+</html>
